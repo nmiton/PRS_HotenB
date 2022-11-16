@@ -1,5 +1,6 @@
-function Header() {
+import { Link } from "react-router-dom";
 
+export default function Header() {
     return (
     <header id="header-wrapper">
         <a href="#" className="app_logo">
@@ -22,7 +23,7 @@ function Header() {
                     <a href="#">Conciergerie</a>
                 </li>
                 <li>
-                    <a href="#">Contactez-nous</a>
+                    <Link to="/contactez-nous">Contactez-nous</Link>
                 </li>
                 <li>
                     <a href="#">Connexion</a>
@@ -32,5 +33,3 @@ function Header() {
     </header>
     )
 }
-
-export default Header

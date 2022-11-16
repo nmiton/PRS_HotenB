@@ -10,30 +10,20 @@
     .container{
         width: 75%;
         margin: $margin-auto-inter-section;
+        padding-top: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        text-align: center;
 
         @include respond(md){
-            flex-direction: row;
-        }
-
-        @include respond(lg){
-            width: 60%;
-        }
-    
-        @include respond(xl){
-            width: 50%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
         }
 
         .card{
-            text-align: center;
             display: flex;
             flex-direction: column;
-
-            span{
-                margin: 1rem;
-            }
             
             .span_number{
                 font-weight: 600;
@@ -43,6 +33,7 @@
 
             .span_label{
                 font-style : italic;
+                margin: $margin-auto-inter-section;
                 font-size: 1.25rem;
             }
         }
