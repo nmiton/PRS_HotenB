@@ -1,7 +1,7 @@
 function Header() {
 
     return (
-    <header className="wrapper-header">
+    <header id="header-wrapper">
         <a href="#" className="app_logo">
             <img src=".\src\assets\img\hotenb\HOTENB_logo_white.png" alt="Icône HôtenB"/>
         </a>
@@ -13,7 +13,7 @@ function Header() {
         <nav className="app_navigation">
             <ul>
                 <li>
-                    <a href="#">Nos services</a>
+                    <a href="#services-wrapper">Nos services</a>
                 </li>
                 <li>
                     <a href="#">Estimez vos revenus</a>

@@ -1,21 +1,32 @@
-.wrapper-partners{
+#partners-wrapper{
     padding : $padding-start-section;
-    width: 80%;
     margin: $margin-auto;
-    // background-color: $color-bg-alt;
-    color: $color-primary-black;
-
-    @include respond(md){
-        width: 50%;
-    }
+    background-color: $color-bg-alt;
+    color: $color-primary-white;
 
     h2{
         text-align: center;
         margin-bottom: 2rem;
     }
 
+    p{
+        width: 80%;
+        margin : $margin-auto-inter-section;
+    }
+
     .slider-wrapper{
         max-height: 15rem;
+
+        img{
+            width: auto;
+            height: 10rem;
+            padding: 2rem;
+        }
+
+        @include respond(md){
+            width: 50%;
+            margin: 0 auto 4rem auto;
+        }
     }
 
 

@@ -1,0 +1,36 @@
+#notice-wrapper{
+    padding : $padding-start-section;
+    color: $color-primary-black;
+
+    h2 {
+        text-align: center;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 4rem auto;
+        border : 1px solid $color-secondary-gold;
+        border-radius : 3px;
+        box-shadow: $box-shadow;
+        padding: 1rem;
+
+        @include respond(lg){
+            width: 60%;
+        }
+
+        p{
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .notice-note{
+            margin: $margin-auto;
+            color: $color-secondary-gold;
+        }
+
+        
+    }
+
+}

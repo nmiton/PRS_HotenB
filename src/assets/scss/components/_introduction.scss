@@ -1,21 +1,37 @@
-.wrapper-introduction{
-    margin: 0 auto;
-
-    @include respond(md){
-        height: 80%;
-    }
-
-    @include respond(lg){
-        height: 60%;
-    }
-
-    @include respond(xl){
-        height: 20%;
-    }
+#introduction-wrapper{
+    width: 100%;
+    position: relative;
 
     #background-video {
+        position: relative;
+        margin: $margin-auto;
+        z-index:0;
+        height:40vh;
         width: 100%;
-        height: 100%;
+        object-fit: cover;
+
+        @include respond(md){
+            height: 60vh;
+        }
     }   
-        
+
+    .overlay {
+        position:absolute;
+        top:35%;
+        width: 100%;
+        text-align: center;
+        z-index:1;
+
+
+        .span-intro{
+            font-size: 1.5rem;
+            color: $color-primary-white;
+            font-style: italic;
+            padding: 0 2rem;
+
+            @include respond(lg){
+                font-size: 1.75rem;
+            }
+        }
+    }
 }

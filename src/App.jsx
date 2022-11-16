@@ -5,6 +5,8 @@ import Partners from './Components/Partners'
 import Service from './Components/Services'
 import Team from './Components/Team'
 import Numbers from './Components/Numbers'
+import News from './Components/News'
+import Notice from './Components/Notice'
 
 import './App.css'
 import './assets/css/style.min.css'
@@ -15,12 +17,11 @@ function App() {
     <div className="app-wrapper">
       <Header/>
       <Introduction/>
-      
-      <Partners/>
       <Service/>
+      <Partners/>
       <Team/>
-      {/* <News/> */}
-      {/* <Notice/> */}
+      <News/>
+      <Notice/>
       <Numbers/>
       <Footer/>
     </div>

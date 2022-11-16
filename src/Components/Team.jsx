@@ -1,7 +1,7 @@
 function Team() {
 
     return (
-        <section className="wrapper-team">
+        <section id="team-wrapper">
             <h2>Notre équipe :</h2>
             <img 
                 src="./src/assets/img/hotenb/HOTENB_logo_black.png"

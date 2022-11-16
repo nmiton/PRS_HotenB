@@ -1,6 +1,6 @@
 export const Numbers = () => {
     return(
-        <section className="wrapper-numbers">
+        <section id="numbers-wrapper">
             <h2>Quelques chiffres :</h2>
             <div className="container">
                 <div className="card">

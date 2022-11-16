@@ -4,7 +4,7 @@ import { faInstagram, faFacebookSquare  } from '@fortawesome/free-brands-svg-ico
 function Footer() {
 
     return (
-    <footer className="wrapper-footer">
+    <footer id="footer-wrapper">
         <nav className="navigation-footer">
             <ul>
                 <li>

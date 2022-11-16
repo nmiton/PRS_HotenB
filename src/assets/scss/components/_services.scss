@@ -1,4 +1,4 @@
-.wrapper-services {
+#services-wrapper {
     padding : $padding-start-section;
     color : $color-primary-black;
     width: 80%;
@@ -18,23 +18,14 @@
     }
 
     .icons-services{
-        // @include respond(lg){
-        //     display: flex;
-        //     flex-direction: row;
-        //     width: 100%;
-        // }
-
         .grid-cards{
-    
-            @include respond(md){
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-    
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            
             @include respond(lg){
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
             }
         }
     
@@ -48,6 +39,7 @@
                 margin-bottom: 1rem;
                 height: 2.5rem;
                 transform: rotate(1.5deg);
+                color : $color-secondary-gold;
 
                 &:hover{
                     height: 2.65rem;
@@ -63,7 +55,6 @@
         }
     }
 
-
     svg{
         &:hover{
             height: 2.1rem;
@@ -71,11 +62,15 @@
     }
 
     .more-services{
-        margin: $margin-inter-section;
-        // display: none;
-
-        ul{
+        .list-more-service{
+            border: 1px solid $color-secondary-gold;
+            border-radius: 3px;
             margin: $margin-inter-section;
+            box-shadow: $box-shadow;
+
+            ul{
+                padding: 2rem;
+            }
         }
     }
 

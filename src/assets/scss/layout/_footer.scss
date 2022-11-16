@@ -1,6 +1,7 @@
-.wrapper-footer{
+#footer-wrapper{
     background-color: $color-bg-alt;
     padding: $padding-start-section;
+    border-top: 1px solid $color-primary-white;
 
     .navigation-footer{
         ul{

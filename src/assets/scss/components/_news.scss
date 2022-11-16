@@ -1,0 +1,42 @@
+#news-wrapper{
+    background-color: $color-primary-black;
+    padding : $padding-start-section;
+    color: $color-primary-white;
+
+    h2 {
+        text-align: center;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: $margin-auto-inter-section;
+
+        @include respond(lg){
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            gap: 5rem;
+        }
+
+        img{
+            margin: $margin-auto-inter-section;
+            width: 50%;
+
+            @include respond(lg){
+                margin: auto;
+                width: auto;
+            }
+        }
+
+        p{
+            margin: $margin-auto-inter-section;
+            text-align: center;
+
+            @include respond(lg){
+                text-align: left;
+            }
+        }
+    }
+
+}

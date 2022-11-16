@@ -1,4 +1,4 @@
-.wrapper-header {
+#header-wrapper {
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -100,7 +100,7 @@
 
     .app_navigation {
         position: fixed;
-        top: 3rem;
+        top: 3.5rem;
         left: 0;
         width: 100%;
         max-height: 0;
@@ -159,7 +159,6 @@
                     &:hover,
                     &.active {
                         color: $color-secondary-blue;
-                        font-size:1.15rem;
                     }
 
                     &.app_button {
