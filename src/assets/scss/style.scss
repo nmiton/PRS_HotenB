@@ -1,0 +1,16 @@
+@import 'base/_reset.scss';
+@import 'abstracts/_variables.scss';
+@import 'mixins/_responsive.scss';
+@import 'mixins/_animations.scss';
+
+
+@import 'layout/_header.scss';
+@import 'layout/_body.scss';
+@import 'layout/_footer.scss';
+
+
+@import 'components/_introduction.scss';
+@import 'components/_services.scss';
+@import 'components/_team.scss';
+@import 'components/_partners.scss';
+@import 'components/_numbers.scss';

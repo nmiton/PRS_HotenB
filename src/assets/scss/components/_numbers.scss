@@ -1,0 +1,52 @@
+.wrapper-numbers{
+    padding : $padding-start-section;
+    width: 75%;
+    margin: $margin-auto;
+
+    @include respond(lg){
+        width: 60%;
+    }
+
+    @include respond(xl){
+        width: 50%;
+    }
+
+    h2{
+        color : $color-primary-black;
+        text-align: center;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $color-primary-black;
+        margin: $margin-inter-section;
+
+        @include respond(md){
+            flex-direction: row;
+        }
+
+        .card{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            color: $color-primary-black;
+
+            span{
+                color: $color-primary-black;
+                margin: 1rem;
+            }
+            
+            .span_number{
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+
+            .span_label{
+                font-style : italic;
+                font-size: 1.25rem;
+            }
+        }
+    }
+}

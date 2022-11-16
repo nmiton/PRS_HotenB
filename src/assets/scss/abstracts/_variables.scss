@@ -1,0 +1,46 @@
+// Padding
+$padding-start-section : 2rem 0;
+// Margin
+$margin-inter-section : 2rem 0;
+$margin-auto : 0 auto; 
+
+/** Fonts **/
+$font-size-default: 16px;
+$font-family-primary: 'Montserrat', sans-serif;
+$font-family-secondary: 'PT Sans', sans-serif;
+$font-family-third: 'Galdeano', sans-serif;
+
+/** Colors **/
+$color-primary-black: #2A2B2D;
+$color-primary-white: #FFFFFF;
+$color-secondary-gold: #B27409;
+$color-secondary-blue: #54899C;
+
+$color-bg-primary: #2A2B2D;
+$color-bg-secondary: #FFFFFF;
+
+$color-bg-alt: #2A2B2D;
+$color-bg-altmenu: #2A2B2D;
+$color-bg-altblur: #2A2B2D;
+$color-fg-primary: #2A2B2D;
+
+$color-danger:#d8414dce;
+$color-success : #1b9b1bb2;
+
+$color-black: #222222;
+$color-blue: #155166;
+$color-orange: #ed771d;
+$color-green:#1b9b1b;
+$color-red: #d43b0c;
+$color-darkred : darkred;
+$color-violet: rgb(60,0,40);
+$color-black: #000000;
+$color-white : #FFFFFF;
+
+/** Decorations **/
+$border-radius-default: 0.5rem;
+$box-shadow-x: 2px;
+$box-shadow-y: 2px;
+$box-shadow-radius: 4px;
+$box-shadow-color: rgba($color-fg-primary, 0.75);
+// $box-shadow-color-alt: rgba($color-bg-primary, 0.75);

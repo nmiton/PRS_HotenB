@@ -1,0 +1,66 @@
+.wrapper-footer{
+    background-color: $color-bg-alt;
+    padding: $padding-start-section;
+
+    .navigation-footer{
+        ul{
+            width: 80%;
+            margin : $margin-auto;
+            text-align: center;
+
+            @include respond(md){
+                width : 75%;
+                display : flex;
+                justify-content: space-between;
+            }
+
+            @include respond(lg){
+                width : 65%;
+            }
+            
+            @include respond(xl){
+                width : 50%;
+            }
+            
+            li{
+                margin: 1rem;
+
+                a {
+                    text-decoration: none;
+                    color : $color-primary-white;
+
+                    &:hover{
+                        color : $color-secondary-blue;
+                        font-size:1.05rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .social_network_link {
+        text-align: center;
+        display: flex;
+        width: 20%;
+        margin: 2rem auto;
+        justify-content: space-around;
+
+        a{
+            text-decoration: none;
+            color : $color-primary-white;
+            svg{
+                height: 1.5rem;
+
+                &:hover{
+                    color : $color-secondary-blue;
+                    height: 1.55rem;
+                }
+            }
+        }
+    }
+
+    p{
+        text-align: center;
+    }
+}

@@ -1,0 +1,15 @@
+.wrapper-team{
+    padding : $padding-start-section;
+    color : $color-primary-black;
+    text-align: center;
+    width: 80%;
+    margin: $margin-auto;
+
+    p{
+        margin: $margin-inter-section
+    }
+
+    img{
+        margin: 5rem 0 2.5rem 0;
+    }
+}

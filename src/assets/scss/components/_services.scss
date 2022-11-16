@@ -1,0 +1,82 @@
+.wrapper-services {
+    padding : $padding-start-section;
+    color : $color-primary-black;
+    width: 80%;
+    margin: $margin-auto;
+
+    h2 {
+        text-align: center;
+    }
+    
+    p{
+        margin: $margin-inter-section;
+    }
+
+    svg{
+        height: 2rem;
+        width: 100%;
+    }
+
+    .icons-services{
+        // @include respond(lg){
+        //     display: flex;
+        //     flex-direction: row;
+        //     width: 100%;
+        // }
+
+        .grid-cards{
+    
+            @include respond(md){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+    
+            @include respond(lg){
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    
+        .card-service{
+            text-align: center;
+            margin: $margin-inter-section;
+            display: flex;
+            flex-direction: column;
+    
+            svg{
+                margin-bottom: 1rem;
+                height: 2.5rem;
+                transform: rotate(1.5deg);
+
+                &:hover{
+                    height: 2.65rem;
+                    transform: rotate(0);
+                }
+            }
+        }
+
+        .solo-cards{
+            display: flex;
+            flex-direction: column;
+            margin: $margin-inter-section;
+        }
+    }
+
+
+    svg{
+        &:hover{
+            height: 2.1rem;
+        }
+    }
+
+    .more-services{
+        margin: $margin-inter-section;
+        // display: none;
+
+        ul{
+            margin: $margin-inter-section;
+        }
+    }
+
+}
