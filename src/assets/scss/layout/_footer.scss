@@ -2,9 +2,6 @@
     background-color: $color-bg-alt;
     padding: $padding-start-section;
     border-top: 1px solid $color-primary-white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 
     .navigation-footer{
         ul{
@@ -35,7 +32,7 @@
 
                     &:hover{
                         color : $color-secondary-blue;
-                        font-size:1.05rem;
+                        // font-size:1.05rem;
                         
                     }
                 }
@@ -58,7 +55,7 @@
 
                 &:hover{
                     color : $color-secondary-blue;
-                    height: 1.55rem;
+                    // height: 1.55rem;
                 }
             }
         }

@@ -4,7 +4,7 @@ export default function Header() {
     return (
     <header id="header-wrapper">
         <a href="#" className="app_logo">
-            <img src=".\src\assets\img\hotenb\HOTENB_logo_white.png" alt="Icône HôtenB"/>
+            <Link to="/"><img src=".\src\assets\img\hotenb\HOTENB_logo_white.png" alt="Icône HôtenB"/></Link>
         </a>
     
         <input className="app_navigation_toggle" type="checkbox" id="menu_btn"/>
