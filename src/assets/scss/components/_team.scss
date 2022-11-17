@@ -1,4 +1,4 @@
-.wrapper-team{
+#team-wrapper{
     padding : $padding-start-section;
     color : $color-primary-black;
     text-align: center;
@@ -11,5 +11,10 @@
 
     img{
         margin: 5rem 0 2.5rem 0;
+        width: 90%;
+
+        @include respond(lg){
+            width: 45%;
+        }
     }
 }

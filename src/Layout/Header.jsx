@@ -1,9 +1,10 @@
-function Header() {
+import { Link } from "react-router-dom";
 
+export default function Header() {
     return (
-    <header className="wrapper-header">
+    <header id="header-wrapper">
         <a href="#" className="app_logo">
-            <img src=".\src\assets\img\hotenb\HOTENB_logo_white.png" alt="Icône HôtenB"/>
+            <Link to="/"><img src=".\src\assets\img\hotenb\HOTENB_logo_white.png" alt="Icône HôtenB"/></Link>
         </a>
     
         <input className="app_navigation_toggle" type="checkbox" id="menu_btn"/>
@@ -13,7 +14,7 @@ function Header() {
         <nav className="app_navigation">
             <ul>
                 <li>
-                    <a href="#">Nos services</a>
+                    <a href="#services-wrapper">Nos services</a>
                 </li>
                 <li>
                     <a href="#">Estimez vos revenus</a>
@@ -22,7 +23,7 @@ function Header() {
                     <a href="#">Conciergerie</a>
                 </li>
                 <li>
-                    <a href="#">Contactez-nous</a>
+                    <Link to="/contactez-nous">Contactez-nous</Link>
                 </li>
                 <li>
                     <a href="#">Connexion</a>
@@ -32,5 +33,3 @@ function Header() {
     </header>
     )
 }
-
-export default Header

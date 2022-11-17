@@ -1,23 +1,24 @@
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebookSquare  } from '@fortawesome/free-brands-svg-icons'
 
 function Footer() {
 
     return (
-    <footer className="wrapper-footer">
+    <footer id="footer-wrapper">
         <nav className="navigation-footer">
             <ul>
                 <li>
-                    <a href="#">Mentions légales</a>
+                    <Link to="/mentions-legales">Mentions légales</Link>
                 </li>
                 <li>
-                    <a href="#">Données personnelles</a>
+                    <Link to="/donnees-personnelles">Données personnelles</Link>
                 </li>
                 <li>
-                    <a href="#">CGU</a>
+                    <Link to="/cgu">CGU</Link>
                 </li>
                 <li>
-                    <a href="#">Contactez-nous</a>
+                    <Link to="/contactez-nous">Contactez-nous</Link>
                 </li>
             </ul>
         </nav>
