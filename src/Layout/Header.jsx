@@ -17,12 +17,12 @@ export default function Header() {
                     <Link to="/nos-services">Nos services</Link>
                     {/* <a href="#services-wrapper">Nos services</a> */}
                 </li>
-                <li>
+                {/* <li>
                     <a href="#">Estimez vos revenus</a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                     <a href="#">Conciergerie</a>
-                </li>
+                </li> */}
                 <li>
                     <Link to="/contactez-nous">Contactez-nous</Link>
                 </li>

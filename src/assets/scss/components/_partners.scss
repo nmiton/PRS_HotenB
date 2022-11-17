@@ -22,6 +22,8 @@
             width: auto;
             height: 10rem;
             padding: 2rem;
+            filter: grayscale(1);
+            -webkit-filter: grayscale(1);
         }
 
         @include respond(md){

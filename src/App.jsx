@@ -15,6 +15,7 @@ import Footer from './Layout/Footer'
 import './App.css'
 import './assets/css/style.min.css'
 import Services from "./Components/Services";
+import Connection from "./Components/Connection";
 
 function App() {
 
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/contactez-nous">
             <Contact/>
+          </Route>
+          <Route path="/connexion">
+            <Connection/>
           </Route>
           <Route path="/cgu">
             <TermsOfUse/>

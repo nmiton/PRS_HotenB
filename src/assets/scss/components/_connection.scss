@@ -1,0 +1,11 @@
+#connection-wrapper {
+    color : $color-primary-black;
+    margin:$margin-auto;
+
+    h2{
+        color: $color-primary-white;
+        background-color: $color-secondary-gold;
+        padding: 3rem 0 3rem 3rem;
+        font-weight: 500;
+    }
+}
