@@ -1,10 +1,46 @@
 #contact-wrapper {
     color : $color-primary-black;
-    padding: $padding-start-section;
-    width: 80%;
     margin:$margin-auto;
 
     h2{
-        text-align: center;
+        color: $color-primary-white;
+        background-color: $color-secondary-gold;
+        padding: 3rem 0 3rem 3rem;
+        font-weight: 500;
     }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+
+        @include respond(md){
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        .contact-info{
+            width: 80%;
+            margin: 1rem auto;
+
+            @include respond(md){
+                margin-top: 5rem;
+            }
+
+            .contact-email, .contact-adresse{
+                margin: 1rem 0 0 0;
+
+                a{
+                    text-decoration: none;
+                    color: $color-primary-black;
+
+                    &:hover{
+                        color : $color-secondary-gold;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+        }
+    }
+
 }

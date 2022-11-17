@@ -14,6 +14,7 @@ import Footer from './Layout/Footer'
 
 import './App.css'
 import './assets/css/style.min.css'
+import Services from "./Components/Services";
 
 function App() {
 
@@ -25,6 +26,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home/>
+          </Route>
+          <Route path="/nos-services">
+            <Services/>
           </Route>
           <Route path="/contactez-nous">
             <Contact/>

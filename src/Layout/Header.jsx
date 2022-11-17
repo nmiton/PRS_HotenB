@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 export default function Header() {
     return (
     <header id="header-wrapper">
-        <a href="#" className="app_logo">
+        <div href="#" className="app_logo">
             <Link to="/"><img src=".\src\assets\img\hotenb\HOTENB_logo_white.png" alt="Icône HôtenB"/></Link>
-        </a>
+        </div>
     
         <input className="app_navigation_toggle" type="checkbox" id="menu_btn"/>
         <label className="app_navigation_toggle_icon" htmlFor="menu_btn">
@@ -14,7 +14,8 @@ export default function Header() {
         <nav className="app_navigation">
             <ul>
                 <li>
-                    <a href="#services-wrapper">Nos services</a>
+                    <Link to="/nos-services">Nos services</Link>
+                    {/* <a href="#services-wrapper">Nos services</a> */}
                 </li>
                 <li>
                     <a href="#">Estimez vos revenus</a>

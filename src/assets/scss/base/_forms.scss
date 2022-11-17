@@ -1,0 +1,53 @@
+form{
+    width: 80%;
+    margin: $margin-auto-inter-section;
+    height: auto;
+
+    .form-group{
+        display: flex;
+        flex-direction: column;
+
+        input,textarea{
+            width: 100%;
+            padding: 0.75rem 1.25rem;
+            margin: 0.5rem 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 0.25;
+            box-sizing: border-box;
+        }
+
+        textarea{
+            resize: vertical;
+        }
+    }
+
+    .form-checkbox{
+        width: 100%;
+        margin: 0.5rem 0;
+        
+        label{
+            margin: 0 1rem;
+        }
+
+        a{
+            text-decoration: none;
+            color : $color-secondary-gold;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    button[type=submit] {
+        width: 100%;
+        background-color: $color-secondary-gold;
+        color: $color-primary-white;
+        padding: 0.9rem 1.25rem;
+        margin: 1rem 0;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+}

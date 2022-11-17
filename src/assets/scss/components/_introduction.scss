@@ -22,16 +22,10 @@
         text-align: center;
         z-index:1;
 
-
         .span-intro{
-            font-size: 1.5rem;
             color: $color-primary-white;
             font-style: italic;
             padding: 0 2rem;
-
-            @include respond(lg){
-                font-size: 1.75rem;
-            }
         }
     }
 }
