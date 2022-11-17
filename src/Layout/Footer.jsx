@@ -23,8 +23,8 @@ function Footer() {
             </ul>
         </nav>
         <div className="social_network_link">
-            <a href="#"><FontAwesomeIcon icon={faFacebookSquare} /></a>
-            <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="https://fr-fr.facebook.com/hotenb.france/" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} /></a>
+            <a href="https://www.instagram.com/hotenb.village/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
         </div>
         <p>© 2022 hotenb.com. Tous droits réservés.</p>
     </footer>

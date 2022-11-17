@@ -6,19 +6,26 @@ import {
 
 import Home from './Components/Home'
 import Contact from './Components/Contact'
+import Services from "./Components/Services";
+import Connection from "./Components/Connection";
 import PersonalData from './Components/PersonalData'
 import LegalNotices from './Components/LegalNotices'
 import TermsOfUse from './Components/TermsOfUse'
 import Header from './Layout/Header'
 import Footer from './Layout/Footer'
 
+
+import ScrollToTop from "./Components/ScrollToTop";
+
 import './App.css'
 import './assets/css/style.min.css'
+
 
 function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="app-wrapper">
         <Header/>
 
@@ -26,8 +33,14 @@ function App() {
           <Route exact path="/">
             <Home/>
           </Route>
+          <Route path="/nos-services">
+            <Services/>
+          </Route>
           <Route path="/contactez-nous">
             <Contact/>
+          </Route>
+          <Route path="/connexion">
+            <Connection/>
           </Route>
           <Route path="/cgu">
             <TermsOfUse/>

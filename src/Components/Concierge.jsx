@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faCamera, faCirclePlus, faCircleMinus, faFileLines, faTabletScreenButton} from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
-import Header from "../Layout/Header"
 
 export default function Services(){
     const [isShown, setIsShown] = useState(false);
@@ -12,7 +11,7 @@ export default function Services(){
 
     return (
         <section id="services-wrapper">
-            <h2>Nos services :</h2>
+            <h2>Nos services de conciergerie :</h2>
             <p>Lorem Ipsum is simply dummy text of the fingerprinting and  typesetting industry. Lorem Ipsum has been the industry's standard dummy  text ever since the 1500s, when an unknown printer took a galley of  type and scrambled it to make a type specimen book. It has survived not  only five centuries, but also the leap into electronic typesetting</p>
             
             <div className='icons-services'>

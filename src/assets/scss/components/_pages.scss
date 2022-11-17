@@ -1,10 +1,24 @@
 #terms-of-use-wrapper, #personal-data-wrapper, #legal-notices-wrapper {
     color : $color-primary-black;
-    padding: $padding-start-section;
-    width: 80%;
     margin:$margin-auto;
 
     h2{
-        text-align: center;
+        color: $color-primary-white;
+        background-color: $color-secondary-gold;
+        padding: 3rem 0 3rem 3rem;
+        font-weight: 500;
+    }
+
+    .container{
+        width: 80%;
+        margin: $margin-auto-inter-section;
+
+        h3{
+            padding: 1rem 0;
+        }
+
+        p{
+            padding: 0.75rem 0; 
+        }
     }
 }
