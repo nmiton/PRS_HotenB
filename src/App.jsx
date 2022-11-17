@@ -6,21 +6,26 @@ import {
 
 import Home from './Components/Home'
 import Contact from './Components/Contact'
+import Services from "./Components/Services";
+import Connection from "./Components/Connection";
 import PersonalData from './Components/PersonalData'
 import LegalNotices from './Components/LegalNotices'
 import TermsOfUse from './Components/TermsOfUse'
 import Header from './Layout/Header'
 import Footer from './Layout/Footer'
 
+
+import ScrollToTop from "./Components/ScrollToTop";
+
 import './App.css'
 import './assets/css/style.min.css'
-import Services from "./Components/Services";
-import Connection from "./Components/Connection";
+
 
 function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="app-wrapper">
         <Header/>
 

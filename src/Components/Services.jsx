@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faCamera, faCirclePlus, faCircleMinus, faFileLines, faTabletScreenButton} from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
+import Header from "../Layout/Header"
 
 export default function Services(){
     const [isShown, setIsShown] = useState(false);

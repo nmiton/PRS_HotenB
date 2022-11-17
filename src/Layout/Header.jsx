@@ -1,8 +1,21 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+    const [header, setHeader] = useState(false);
+
+    const changeBackground = () => {
+        if(window.scrollY >= 570){
+            setHeader(true)
+        }else{
+            setHeader(false)
+        }
+    }
+
+    window.addEventListener("scroll",changeBackground)
+    
     return (
-    <header id="header-wrapper">
+    <header id="header-wrapper" className={header ? 'headerBlack' : 'headerTransparent'}>
         <div href="#" className="app_logo">
             <Link to="/"><img src=".\src\assets\img\hotenb\HOTENB_logo_white.png" alt="Icône HôtenB"/></Link>
         </div>
@@ -11,7 +24,7 @@ export default function Header() {
         <label className="app_navigation_toggle_icon" htmlFor="menu_btn">
             <span className="navicon"></span>
         </label>
-        <nav className="app_navigation">
+        <nav className={header ? 'app_navigation headerBlack' : 'app_navigation headerTransparent'}>
             <ul>
                 <li>
                     <Link to="/nos-services">Nos services</Link>

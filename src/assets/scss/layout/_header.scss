@@ -1,3 +1,11 @@
+.headerBlack{
+    background-color: $color-bg-alt;
+}
+
+.headerTransparent{
+    background-color: transparent;
+}
+
 #header-wrapper {
     position: sticky;
     top: 0;
@@ -9,7 +17,6 @@
     padding: 0 1rem;
     min-height: 5rem;
     color: $color-bg-secondary;
-    background-color: $color-bg-alt;
     box-shadow: 0 $box-shadow-y $box-shadow-radius $box-shadow-color;
     
     .app_logo {
@@ -20,6 +27,7 @@
 
         img {
             height: 2rem;
+            padding: 1rem 0;
             display: block;
             filter: drop-shadow($box-shadow-x $box-shadow-y $box-shadow-radius $box-shadow-color);
         }
@@ -68,6 +76,7 @@
         width: 1.25rem;
         background-color: $color-bg-secondary;
         transition: background .2s ease-out;
+        margin: 1rem;
 
         @include respond(sm-menu) {
             display: none;
@@ -100,12 +109,14 @@
 
     .app_navigation {
         position: fixed;
+        margin-top: 1rem;
+        padding-top: 1rem;
         top: 3.5rem;
         left: 0;
         width: 100%;
         max-height: 0;
         overflow: hidden;
-        background-color: $color-bg-primary;
+        // background-color: $color-bg-primary;
         box-shadow: 0 $box-shadow-y $box-shadow-radius $box-shadow-color;
         transition: max-height 0.3s ease-in-out;
 
