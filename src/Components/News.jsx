@@ -2,7 +2,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 function News() {
     return (
-        <section id="news-wrapper" data-aos="fade-up">
+        <section id="news-wrapper">
             <h2>Nos actualités :</h2>
             <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} useKeyboardArrows={true} autoPlay={true} stopOnHover={true} interval={10000} transitionTime={500} swipeScrollTolerance={5}>
                 <div className="container">

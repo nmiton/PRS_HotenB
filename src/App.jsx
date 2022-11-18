@@ -11,7 +11,7 @@ import Connection from "./Components/Connection";
 import PersonalData from './Components/PersonalData'
 import LegalNotices from './Components/LegalNotices'
 import TermsOfUse from './Components/TermsOfUse'
-import Header from './Layout/Header'
+import Header from './Layout/Header2'
 import Footer from './Layout/Footer'
 
 

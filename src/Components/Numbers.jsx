@@ -23,7 +23,7 @@ function Numbers() {
     window.addEventListener("scroll",activeAnimation)
 
     return(
-        <section id="numbers_wrapper" data-aos="fade-up">
+        <section id="numbers_wrapper">
             <h2>Quelques chiffres :</h2>
             <div className="container">
                 <div className="card">

@@ -18,6 +18,8 @@
     }
 
     .icons-services{
+        margin-bottom: 3rem;
+
         .grid-cards{
             display: grid;
             grid-template-columns: 1fr;
@@ -70,7 +72,7 @@
     }
 
     .btn-services{
-        margin-top: 13rem;
+        margin : $margin-inter-section
     }
 
     .more-services{
