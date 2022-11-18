@@ -1,24 +1,29 @@
-import Introduction from '../Components/Introduction'
-import Partners from '../Components/Partners'
-import Service from '../Components/Services'
-import Team from '../Components/Team'
-import Numbers from '../Components/Numbers'
-import News from '../Components/News'
-import Notice from '../Components/Notice'
+import React, {useState} from 'react'
 
-function Home(){
+import Introduction from './Introduction'
+import Partners from './Partners'
+import Service from './Services'
+import Team from './Team'
+import Numbers from './Numbers'
+import News from './News'
+import Notice from './Notice'
+import Concierge from './Concierge'
+
+const Home = () => {
+
     return(
-        <div className='home-wrapper'>
-            <Introduction/>
+        <div id='home-wrapper'>
+            {/* <Introduction/> */}
             <Service/>
-            <Partners/>
+            <Concierge/>
+            {/* <Partners/>
             <Team/>
             <News/>
             <Notice/>
-            <Numbers/>
+            <Numbers/> */}
         </div>
     )
 }
 
 
-export default Home
+export default Home;

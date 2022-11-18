@@ -2,6 +2,7 @@ form{
     width: 80%;
     margin: $margin-auto-inter-section;
     height: auto;
+    // padding: $padding-start-section;
 
     .form-group{
         display: flex;
@@ -50,5 +51,11 @@ form{
         border: none;
         border-radius: 0.25rem;
         cursor: pointer;
+
+        &:hover{
+            color : $color-primary-black;
+            background-color: $color-primary-white;
+            border: 0.1px solid $color-primary-black;
+        }
     }
 }

@@ -14,11 +14,15 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "aos": "^3.0.0-beta.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^5.3.4",
-    "sass": "^1.56.1"
+    "react-scroll": "^1.8.8",
+    "sass": "^1.56.1",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",

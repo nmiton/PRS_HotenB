@@ -20,38 +20,54 @@
     .icons-services{
         .grid-cards{
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.5rem;
-            
-            @include respond(lg){
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-            }
-        }
-    
-        .card-service{
+            grid-template-columns: repeat(1,1fr);
             text-align: center;
-            margin: $margin-inter-section;
-            display: flex;
-            flex-direction: column;
-    
-            svg{
-                margin-bottom: 1rem;
-                height: 2.5rem;
-                transform: rotate(1.5deg);
-                color : $color-secondary-gold;
+            gap: 1rem;
 
-                &:hover{
-                    height: 2.65rem;
-                    transform: rotate(0);
-                }
+            @include respond(md){
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            @include respond(lg){
+                grid-template-columns: repeat(5,1fr);
             }
         }
+    }
 
-        .solo-cards{
-            display: flex;
-            flex-direction: column;
-            margin: $margin-inter-section;
+    .card-service{
+        box-shadow: $box-shadow;
+        transition: 0.3s;
+        
+        &:hover {
+            box-shadow: $box-shadow-hover;
+        }
+
+        span{
+            margin: 2rem 0;
+        }
+
+        svg{
+            margin: 1rem auto;
+            color : $color-secondary-gold;
+        }
+    }
+
+    .icons-services-concierge{
+        margin-bottom: 5rem;
+
+        .grid-cards{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            text-align: center;
+            gap: 1rem;
+
+            @include respond(md){
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            @include respond(lg){
+                grid-template-columns: repeat(3,1fr);
+            }
         }
     }
 
@@ -61,6 +77,10 @@
         }
     }
 
+    .btn-services{
+        margin : $margin-inter-section
+    }
+
     .more-services{
         .list-more-service{
             border: 1px solid $color-secondary-gold;
@@ -68,10 +88,13 @@
             margin: $margin-inter-section;
             box-shadow: $box-shadow;
 
+            &:hover{
+                box-shadow: $box-shadow-hover;
+            }
+
             ul{
                 padding: 2rem;
             }
         }
     }
-
 }

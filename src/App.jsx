@@ -7,11 +7,12 @@ import {
 import Home from './Components/Home'
 import Contact from './Components/Contact'
 import Services from "./Components/Services";
+import Concierge from "./Components/Concierge"
 import Connection from "./Components/Connection";
 import PersonalData from './Components/PersonalData'
 import LegalNotices from './Components/LegalNotices'
 import TermsOfUse from './Components/TermsOfUse'
-import Header from './Layout/Header'
+import Header from './Layout/Header2'
 import Footer from './Layout/Footer'
 
 
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/nos-services">
             <Services/>
+          </Route>
+          <Route path="/nos-services-de-conciergerie">
+            <Concierge/>
           </Route>
           <Route path="/contactez-nous">
             <Contact/>
