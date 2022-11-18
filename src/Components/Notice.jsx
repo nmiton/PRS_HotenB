@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 function Notice(){
     return(
-        <section id="notice-wrapper">
+        <section id="notice-wrapper" data-aos="fade-up">
             <h2>Ils nous font confiance :</h2>
             <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} useKeyboardArrows={true} autoPlay={true} stopOnHover={true} interval={10000} transitionTime={500} swipeScrollTolerance={5}>
                     <div className="container">

@@ -3,9 +3,14 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
     const [header, setHeader] = useState(false);
+    const introduction_section = document.getElementById("introduction_wrapper")
+    let introduction_section_height = 574;
 
+    if(introduction_section!=null){
+        introduction_section_height = introduction_section.offsetHeight
+    }
     const changeBackground = () => {
-        if(window.scrollY >= 570){
+        if(window.scrollY >= introduction_section_height){
             setHeader(true)
         }else{
             setHeader(false)
@@ -28,7 +33,6 @@ export default function Header() {
             <ul>
                 <li>
                     <Link to="/nos-services">Nos services</Link>
-                    {/* <a href="#services-wrapper">Nos services</a> */}
                 </li>
                 {/* <li>
                     <a href="#">Estimez vos revenus</a>

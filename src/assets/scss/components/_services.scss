@@ -20,12 +20,26 @@
     .icons-services{
         .grid-cards{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 0.5rem;
             
+            @include respond(md){
+                grid-template-columns: 1fr 1fr;
+            }
+
             @include respond(lg){
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        .flex-cards {
+            display: flex;
+            flex-direction: column;
+            
+            @include respond(md){
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
             }
         }
     
@@ -47,18 +61,16 @@
                 }
             }
         }
-
-        .solo-cards{
-            display: flex;
-            flex-direction: column;
-            margin: $margin-inter-section;
-        }
     }
 
     svg{
         &:hover{
             height: 2.1rem;
         }
+    }
+
+    .btn-services{
+        margin-top: 13rem;
     }
 
     .more-services{
@@ -73,5 +85,4 @@
             }
         }
     }
-
 }

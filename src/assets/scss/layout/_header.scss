@@ -3,7 +3,7 @@
 }
 
 .headerTransparent{
-    background-color: transparent;
+    background-color: $color-secondary-gold;
 }
 
 #header-wrapper {
@@ -24,7 +24,6 @@
         text-decoration: none;
         color : $color-primary-white;
 
-
         img {
             height: 2rem;
             padding: 1rem 0;
@@ -33,12 +32,15 @@
         }
     }
 
+
+
     .app_navigation_toggle {
         position: relative;
         display: none;
         user-select: none;
         border : 2px solid $color-secondary-gold;
         margin: 2rem;
+        width: 1rem;
         cursor: pointer;
 
         &:checked {
@@ -110,13 +112,11 @@
     .app_navigation {
         position: fixed;
         margin-top: 1rem;
-        padding-top: 1rem;
         top: 3.5rem;
         left: 0;
         width: 100%;
         max-height: 0;
         overflow: hidden;
-        // background-color: $color-bg-primary;
         box-shadow: 0 $box-shadow-y $box-shadow-radius $box-shadow-color;
         transition: max-height 0.3s ease-in-out;
 
@@ -160,7 +160,6 @@
 
                     @include respond(sm-menu) {
                         margin: 0 0.5rem;
-                        padding: 1.25rem 0;
                     }
 
                     @include respond(sm-menu) {

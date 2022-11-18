@@ -43,7 +43,7 @@ class Incrementer extends React.Component {
 
     render () {
         return (
-            <span> {this.state.value}</span>
+            <span>+{this.state.value}</span>
         )
     }
 }

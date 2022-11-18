@@ -5,12 +5,14 @@ import Team from '../Components/Team'
 import Numbers from '../Components/Numbers'
 import News from '../Components/News'
 import Notice from '../Components/Notice'
+import Concierge from '../Components/Concierge'
 
 function Home(){
     return(
-        <div className='home-wrapper'>
+        <div className='home_wrapper'>
             <Introduction/>
             <Service/>
+            <Concierge/>
             <Partners/>
             <Team/>
             <News/>
