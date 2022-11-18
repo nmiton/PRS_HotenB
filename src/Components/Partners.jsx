@@ -11,15 +11,21 @@ class Partners extends Component {
                 <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} useKeyboardArrows={true} autoPlay={true} stopOnHover={true} interval={5000} transitionTime={500} swipeScrollTolerance={5}>
                     <div>
                         <img src="./src/assets/img/partners/booking_logo.png" />
-                        {/* <p className="legend">Legend 1</p> */}
                     </div>
                     <div>
                         <img src="./src/assets/img/partners/leboncoin_logo.png" />
-                        {/* <p className="legend">Legend 2</p> */}
                     </div>
                     <div>
                         <img src="./src/assets/img/partners/airbnb_logo.png" />
-                        {/* <p className="legend">Legend 3</p> */}
+                    </div>
+                    <div>
+                        <img src="./src/assets/img/partners/abritel_logo.png" />
+                    </div>
+                    <div>
+                        <img src="./src/assets/img/partners/locasun_logo.png" />
+                    </div>
+                    <div>
+                        <img src="./src/assets/img/partners/veepee_logo.png" />
                     </div>
                 </Carousel>
             </section>
