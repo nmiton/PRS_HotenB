@@ -7,7 +7,8 @@ import {
     SidebarWrapper, 
     SideBtnWrap, 
     SidebarRoute ,
-    SidebarMenu
+    SidebarMenu,
+    SidebarLogo
 } from './SidebarElements'
 
 
@@ -19,6 +20,7 @@ export const Sidebar = ({isOpen,toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
+                    <SidebarLogo to='/'><img src=".\src\assets\img\hotenb\HOTENB_logo_white.png" alt="Icône HôtenB"/></SidebarLogo>
                     <SidebarLink to="/nos-services">Nos services</SidebarLink>
                     <SidebarLink to="/contactez-nous">Nous contacter</SidebarLink>
                 </SidebarMenu>

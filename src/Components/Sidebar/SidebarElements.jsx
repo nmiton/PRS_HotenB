@@ -91,3 +91,15 @@ export const SidebarMenu = styled.ul`
     }
     
 `
+
+
+export const SidebarLogo = styled(LinkR)`
+    color : #FFFFFF;
+    cursor : pointer;
+    font-size : 1.5rem;
+    display:flex;
+    align-items :center;
+    margin : 0 auto;
+    text-decoration : none;
+`
+

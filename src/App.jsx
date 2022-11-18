@@ -7,6 +7,7 @@ import {
 import Home from './Components/Home'
 import Contact from './Components/Contact'
 import Services from "./Components/Services";
+import Concierge from "./Components/Concierge"
 import Connection from "./Components/Connection";
 import PersonalData from './Components/PersonalData'
 import LegalNotices from './Components/LegalNotices'
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/nos-services">
             <Services/>
+          </Route>
+          <Route path="/nos-services-de-conciergerie">
+            <Concierge/>
           </Route>
           <Route path="/contactez-nous">
             <Contact/>

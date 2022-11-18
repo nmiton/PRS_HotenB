@@ -38,12 +38,12 @@ export default function Services(){
                         <FontAwesomeIcon icon={faTabletScreenButton} />
                         <span>Gestion du loyer et du dépot de garantie</span>
                     </div>
-                </div>
-                <div className="card-service"
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="center-bottom">
-                    <FontAwesomeIcon icon={faTabletScreenButton} />
-                    <span>Application propriétaire</span>
+                    <div className="card-service"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom">
+                        <FontAwesomeIcon icon={faTabletScreenButton} />
+                        <span>Application propriétaire</span>
+                    </div>
                 </div>
             </div>
         </section>
