@@ -13,14 +13,14 @@ const Home = () => {
 
     return(
         <div id='home-wrapper'>
-            {/* <Introduction/> */}
+            <Introduction/>
             <Service/>
             <Concierge/>
-            {/* <Partners/>
+            <Partners/>
             <Team/>
             <News/>
             <Notice/>
-            <Numbers/> */}
+            <Numbers/>
         </div>
     )
 }

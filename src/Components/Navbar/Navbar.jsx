@@ -9,13 +9,12 @@ import {
     NavMenu, 
     NavLinks,
     NavBtnLink,
-    NavBtn
+    NavBtn,
 } from './NavbarElements'
-
 
 export const Navbar = ({toggle}) => {
     return (
-        <Nav>
+        <Nav id='navbar_header'>
             <NavBarContainer>
                 <NavLogo to='/'><img src=".\src\assets\img\hotenb\HOTENB_logo_white.png" alt="Icône HôtenB"/></NavLogo>
                 <MobileIcon onClick={toggle}>
