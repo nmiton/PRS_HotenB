@@ -1,12 +1,13 @@
 #introduction_wrapper{
     width: 100%;
     position: relative;
+    margin-top: -80px;
 
     #background-video {
         position: relative;
         margin: $margin-auto;
         z-index:0;
-        height:60vh;
+        height:75vh;
         width: 100%;
         object-fit: cover;
     }   

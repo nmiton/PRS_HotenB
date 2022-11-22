@@ -14,6 +14,7 @@ import LegalNotices from './Components/LegalNotices'
 import TermsOfUse from './Components/TermsOfUse'
 import Header from './Layout/Header2'
 import Footer from './Layout/Footer'
+import Redirection from "./Components/Redirection";
 
 
 import ScrollToTop from "./Components/ScrollToTop";
@@ -28,7 +29,8 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="app-wrapper">
-        <Header/>
+        <Redirection/>
+        {/* <Header/>
 
         <Switch>
           <Route exact path="/">
@@ -57,7 +59,7 @@ function App() {
           </Route>
         </Switch>
         
-        <Footer/>
+        <Footer/> */}
       </div>
     </Router>
   )

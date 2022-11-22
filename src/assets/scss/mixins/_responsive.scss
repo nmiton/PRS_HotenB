@@ -6,11 +6,17 @@ $breakpoint-xl: 1201px;
 
 // Breakpoint for menu
 $breakpoint-sm-menu: 1300px;
+$breakpoint-md-redirection: 1200px;
 
 /* Mixin: Media queries */
 @mixin respond($breakpoint) {
     @if ($breakpoint == sm-menu) {
         @media (min-width: $breakpoint-sm-menu) {
+            @content;
+        }
+    }
+    @if ($breakpoint == md-redirection) {
+        @media (min-width: $breakpoint-md-redirection) {
             @content;
         }
     }

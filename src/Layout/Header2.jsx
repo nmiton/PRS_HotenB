@@ -9,6 +9,20 @@ const Header = () => {
     const toggle = () => {
         setIsOpen(!isOpen)
     }
+
+    const [headerTransparent, setHeaderTranparent] = useState(true);
+    const navBar = document.getElementById("navbar_header");
+    const changeBackground = () => {
+        if(window.scrollY != 1){
+            // setHeaderTranparent(false)
+            navBar.style.backgroundColor = "#2A2B2D"
+        }else{
+            // setHeaderTranparent(true)
+            navBar.style.backgroundColor = "transparent"
+        }
+    }
+
+    window.addEventListener("scroll",changeBackground)
     
     return(
         <header id='header-wrapper'>
